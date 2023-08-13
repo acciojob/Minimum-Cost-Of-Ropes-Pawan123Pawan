@@ -1,6 +1,5 @@
 function calculateMinCost(arr) {
-  //your code here
-  if (arr.length <= 1) {
+    if (arr.length <= 1) {
         return 0; // No cost if there's only one or no ropes
     }
 
@@ -16,4 +15,7 @@ function calculateMinCost(arr) {
     }
 
     return totalCost;
-}  
+}
+
+let arr = [4, 2, 7, 6, 9];
+// console.log(calculateMinCost(arr)); // This will output the total minimum cost
