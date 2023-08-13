@@ -1,6 +1,10 @@
-function calculateMinCost(arr) {
+function calculateMinCost() {
+    let input = document.getElementById("rope-lengths").value;
+    let arr = input.split(',').map(Number);
+
     if (arr.length <= 1) {
-        return 0; // No cost if there's only one or no ropes
+        document.getElementById("result").innerHTML = "Minimum cost: 0"; // No cost if there's only one or no ropes
+        return;
     }
 
     let totalCost = 0;
@@ -14,8 +18,5 @@ function calculateMinCost(arr) {
         arr.sort((a, b) => a - b); // Re-sort the ropes
     }
 
-    return totalCost;
+    document.getElementById("result").innerHTML = "Minimum cost: " + totalCost; // Display the result
 }
-
-let arr = [4, 2, 7, 6, 9];
-console.log(calculateMinCost(arr)); // This will output the total minimum cost
