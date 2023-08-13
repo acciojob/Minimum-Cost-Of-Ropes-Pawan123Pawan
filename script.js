@@ -3,7 +3,7 @@ function calculateMinCost() {
     let arr = input.split(',').map(Number);
 
     if (arr.length <= 1) {
-        document.getElementById("result").innerHTML = "Minimum cost: 0"; // No cost if there's only one or no ropes
+        document.getElementById("result").innerHTML = 0; // No cost if there's only one or no ropes
         return;
     }
 
@@ -18,5 +18,5 @@ function calculateMinCost() {
         arr.sort((a, b) => a - b); // Re-sort the ropes
     }
 
-    document.getElementById("result").innerHTML = "Minimum cost: " + totalCost; // Display the result
+    document.getElementById("result").innerHTML = totalCost; // Display the result
 }
