@@ -18,4 +18,4 @@ function calculateMinCost(arr) {
 }
 
 let arr = [4, 2, 7, 6, 9];
-// console.log(calculateMinCost(arr)); // This will output the total minimum cost
+console.log(calculateMinCost(arr)); // This will output the total minimum cost
